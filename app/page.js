@@ -27,7 +27,7 @@ export default async function Home({searchParams}) {
 }
 
 async function getArticles(place) {
-  const res = await fetch('http://127.0.0.1:8092/wp-json/wp/v2/posts',{mode: 'no-cors'});
+  const res = await fetch('https://admin.e-pomen.rs/wp-json/wp/v2/posts',{mode: 'no-cors'});
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
   // Recommendation: handle errors
