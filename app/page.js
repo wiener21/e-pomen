@@ -12,8 +12,8 @@ export default async function Home({searchParams}) {
 
   return (
     <div className='container mx-auto mt-2'>
-        <Filters></Filters>
-        <ContentComponent></ContentComponent>
+        {/* <Filters></Filters> */}
+        {/* <ContentComponent></ContentComponent> */}
         <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 grid-flow-row-dense'>
           {articles.map(article => (
             <Obituary personID={article.acf.person} key={article.id} article={article} content="short"></Obituary>
