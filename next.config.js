@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+require('dotenv').config();
 const nextConfig = {
     experimental: { appDir: true },
   webpack(config) {
@@ -8,12 +9,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: `${process.env.PROTO}`,
-        hostname: `${process.env.HOST_URL}`,
+        protocol: process.env.PROTO,
+        hostname: process.env.HOST_URL,
       },
     ],
     formats: [],
   },
 }
 
-module.exports = nextConfig
+export default nextConfig
