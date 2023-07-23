@@ -13,7 +13,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'e-pomen.rs',
+        hostname: 'admin.e-pomen.rs',
       },
     ],
   },
