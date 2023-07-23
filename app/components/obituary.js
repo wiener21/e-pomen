@@ -102,7 +102,7 @@ export default async function Obituary({article, content}) {
         if (!id) {
             return;
         }
-        const res = await fetch('https://admin.e-pomen.rs/wp-json/wp/v2/person/'+id,{mode: 'no-cors'});
+        const res = await fetch(process.env.ADMIN_HOST_URL+'/wp-json/wp/v2/person/'+id,{mode: 'no-cors'});
         // The return value is *not* serialized
         // You can return Date, Map, Set, etc.
         // Recommendation: handle errors
@@ -154,7 +154,7 @@ export default async function Obituary({article, content}) {
         if (!id) {
             return;
         }
-        const res = await fetch('https://admin.e-pomen.rs/wp-json/wp/v2/cemetery/'+id,{mode: 'no-cors'});
+        const res = await fetch(process.env.ADMIN_HOST_URL+'/wp-json/wp/v2/cemetery/'+id,{mode: 'no-cors'});
         // The return value is *not* serialized
         // You can return Date, Map, Set, etc.
         // Recommendation: handle errors

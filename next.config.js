@@ -8,8 +8,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'admin.e-pomen.rs',
+        protocol: process.env.PROTO,
+        hostname: process.env.HOST_URL,
       },
     ],
     formats: [],

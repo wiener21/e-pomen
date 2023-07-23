@@ -24,7 +24,7 @@ export default function Candle({article}) {
         setLikes(likes+1)
     
         // apiFetch( {
-        //     path: 'https://admin.e-pomen.rs/wp-json/wp/v2/post/'+article.id,
+        //     path: 'process.env.ADMIN_HOST_URL/wp-json/wp/v2/post/'+article.id,
         //     method: 'POST',
         //     data: {
         //       "acf": {
