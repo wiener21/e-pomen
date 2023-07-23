@@ -6,7 +6,16 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ["127.0.0.1", "admin.e-pomen.rs", "e-pomen.rs"]
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '127.0.0.1',
+      },
+      {
+        protocol: 'https',
+        hostname: 'e-pomen.rs',
+      },
+    ],
   },
 }
 
