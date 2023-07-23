@@ -7,13 +7,7 @@ const nextConfig = {
     return config
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: process.env.PROTO,
-        hostname: process.env.HOST_URL,
-      },
-    ],
-    formats: [],
+    domains: [process.env.ADMIN_HOST]
   },
 }
 
