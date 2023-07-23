@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-require('dotenv').config();
 const nextConfig = {
     experimental: { appDir: true },
   webpack(config) {
@@ -7,7 +6,7 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: [process.env.ADMIN_HOST]
+    domains: ["127.0.0.1", "admin.e-pomen.rs", "e-pomen.rs"]
   },
 }
 
