@@ -14,6 +14,7 @@ export default async function Home({searchParams}) {
     <div className='container mx-auto mt-2'>
         {/* <Filters></Filters> */}
         {/* <ContentComponent></ContentComponent> */}
+        <h1 className='text-center text-3xl text-xl:md font-bold mt-6 mb-4'>Čitulje - poslednja 24h</h1>
         <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 grid-flow-row-dense'>
           {articles.map(article => (
             <Obituary personID={article.acf.person} key={article.id} article={article} content="short"></Obituary>

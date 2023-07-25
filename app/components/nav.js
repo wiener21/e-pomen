@@ -29,26 +29,18 @@ function Nav() {
           </div>
           <Link href="/" className="btn btn-ghost normal-case text-xl">e-pomen.rs</Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        {/* <div className="navbar-center hidden lg:flex"> */}
+          {/* <ul className="menu menu-horizontal px-1"> */}
+            {/* <li><Link href="/">Početna</Link></li> */}
+            {/* <li><Link href="/o-nama">O nama</Link></li> */}
+          {/* </ul> */}
+        {/* </div> */}
+        <div className="navbar-end ">
+          <ul className="menu menu-horizontal px-1 hidden lg:flex">
             <li><Link href="/">Početna</Link></li>
             <li><Link href="/o-nama">O nama</Link></li>
-            {/* <li tabIndex={0}>
-              <a>
-                Parent
-                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-              </a>
-              <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li> */}
-            {/* <li><a>Cenovnik</a></li> */}
-            <li><a>Kontakt</a></li>
           </ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Nova objava +</a>
+            <Link className="btn" href="/nova-objava">Nova Objava +</Link>
         </div>
       </div>
     )

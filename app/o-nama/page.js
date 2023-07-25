@@ -1,9 +1,9 @@
 export default function Page() {
     return (
-        <div className='container mx-auto w-1/2'>
-            
+        <div className='container mx-auto md:w-1/2 w-4/5'>
+            <h1 className="text-xl font-bold mt-4">O Nama</h1>
             <p className="mt-6 mb-6">
-                <b>eumrlice.rs</b> je portal namenjen bržem i jednostavnijem obaveštavanju javnosti o smrti članova porodice, rodbine, bliskih prijatelja, saradnika, poznanika.
+                <b>e-pomen.rs</b> je portal namenjen bržem i jednostavnijem obaveštavanju javnosti o smrti članova porodice, rodbine, bliskih prijatelja, saradnika, poznanika.
             </p>
             <p className="mt-6 mb-6">
                 U skladu sa novim tehnologijama i potrebom za što dostupnijim informacijama, mogućnost elektronske objave umrlica postala je neizbežan segment digitalne komunikacije. U odnosu na tradicionalne print medije, vidljivost i dostupnost ovako objavljene informacije je neuporedivo veća zbog mogućnosti da ljudi i van granica naše zemlje dobiju pravovremenu informaciju o smrti bliskih osoba ili poznanika.
@@ -13,7 +13,7 @@ export default function Page() {
             </p>
             <p className="mt-6 mb-6">
                 Korišćenjem usluga koje pruža portal 
-                <b> eumrlica.rs </b> 
+                <b> e-pomen.rs </b> 
                 korisnici su adekvatno zaštićeni prihvatanjem definisanih 
                 <a href="#"><b> Uslovi korišćenja </b></a> i 
                 <a href="#"><b> Politika privatnosti </b></a> 
