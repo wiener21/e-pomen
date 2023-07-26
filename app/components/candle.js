@@ -6,7 +6,7 @@ export default function Candle({article}) {
     const [likes, setLikes] = React.useState(article.acf.candle)
     return (
         <button onClick={updateCandle}>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
                 <Image
                     className="rounded-xl border-solid border border-black"
                     src="/animated-candle.gif" 
@@ -24,7 +24,7 @@ export default function Candle({article}) {
         setLikes(likes+1)
     
         // apiFetch( {
-        //     path: 'process.env.ADMIN_HOST_URL/wp-json/wp/v2/post/'+article.id,
+        //     path: 'process.env.ADMIN_URL/wp-json/wp/v2/post/'+article.id,
         //     method: 'POST',
         //     data: {
         //       "acf": {

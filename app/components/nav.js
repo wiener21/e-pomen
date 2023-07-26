@@ -10,9 +10,8 @@ function Nav() {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li><Link href="/">Početna</Link></li>
-              <li>
-                <Link href="/o-nama">O nama</Link>
-              </li>
+              <li><Link href="/o-nama">O nama</Link></li>
+              <li><Link href="/uslovi-koriscenja">Uslovi korisćenja</Link></li>
               {/* <li tabIndex={0}>
                 <a className="justify-between">
                   Parent
@@ -39,6 +38,7 @@ function Nav() {
           <ul className="menu menu-horizontal px-1 hidden lg:flex">
             <li><Link href="/">Početna</Link></li>
             <li><Link href="/o-nama">O nama</Link></li>
+            <li><Link href="/uslovi-koriscenja">Uslovi korišćenja</Link></li>
           </ul>
             <Link className="btn" href="/nova-objava">Nova Objava +</Link>
         </div>
